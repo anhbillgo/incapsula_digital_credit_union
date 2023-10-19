@@ -1,4 +1,7 @@
 (function () {
+    /**
+     * MAX_TEXTURE_IMAGE_UNITSrmocx.RealPlayer G2 Control.1ZWAdobeFMTExtracreateEvent__webdriver_script_funcmultiplyFLOATgetSupportedExtensionschangedTouchesgetImageData__proto__RENDERERuniformOffsetstopInternalerroredFileBitstreamVeraSansMono-measureTextinterrogation{[nativecode]}ActiveXObjectmousedownCalibridebugWMPlayer.OCXtextcrgb(255,0,255)supportedEntryTypesalphabeticwebdriver-evaluateHELVfilenameuserAgentremoveChildlanguageamsMaxTouchPointsrttbaseRemoveChild_e421bb29WEBGL_debug_renderer_infoUNMASKED_RENDERER_WEBGLatPDF.PdfCtrlgetExtensionArray__fxdriver_unwrappedVENDORchromeuseProgram__nightmareunknownbindBufferArabicTypesettingcanPlayTypeSTENCIL_BITSLucidaSans__webdriver_unwrappedscriptdisplaycontainerJSONprototypetextBaselinewebgl_ioimplementationgetParameterpushrefreshdrawArraysvisualViewportchildren callPhantomMAX_VERTEX_TEXTURE_IMAGE_UNITSitemscalemouseentertWebGL2RenderingContextQuickTime.QuickTimeopenDatabaseMAX_VERTEX_UNIFORM_VECTORSMSUIGothicMarlettFRAGMENT_SHADERabsvertexPosArraytouchmove[\ud800-\udbff]$[\u0080-\uFFFF]canvas_fonts$PIvideo/mp4; codecs="avc1.4D401E"touchcancelscreenYplatformMEDIUM_INT18pt ArialEXT_texture_filter_anisotropicstoptoUpperCaseMinionProObjectnow__webdriver_script_functionBankGothicMdBTexceededactualBoundingBoxRightvalueskippedmimeTypescreateBuffercurrentTimeLeelawadeeMAX_TEXTURE_SIZELOW_INTlocationoffsetUniformreeseSkipExpirationCheckAvantGardeBkBTHaettenschweilerShell.UIHelperFunctionMonotypeCorsivarangeMaxvideo/mp4; codecs="avc1.42E01E"devicePixelRatiowidthconsoleundefinedtimeStampisPointInPathradiusXvendorperformanceproductMAX_TEXTURE_MAX_ANISOTROPY_EXTdatabeginPathcreateElementNSMAX_CUBE_MAP_TEXTURE_SIZEavailWidthLevenimMTCenturyDocumentTimeline~
+     */
     var yc = [145, 93, 208, 72, 151, 117, 100, 32, 54, 182, 28, 128, 141, 189, 127, 206, 138, 51, 255, 191].length;    
     var U8 = 0;
     var Zo = [];
@@ -6,7 +9,10 @@
     var yY = 132 % 7 + 1;//7
     var TG = 0;
     var f4 = "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";
+
+    //console.log(`Let see if f4 comes from somethings: ${window.btoa(f4)}`); 
     var ox = window.atob(f4);
+    console.log(`Let see if f4 comes from somethings: ${ox}`); 
     var Jx = ox.length;//1714
     var r7 = [];
     while (TG < Jx) {
@@ -23,8 +29,6 @@
         Cd += 1;
     }
     var fS = HP;
-
-    console.log(`HP=${HP}, ${fS.length} || U8=${ U8 }`);
     var nm = fS.length;
     while (U8 < nm) {
         var Yc = Bh;
@@ -34,7 +38,8 @@
         Zo.push(oW ^ kG ^ Yc);
         U8 += 1;
     }
-    console.log(`Zo=${Zo}`);
+    //console.log(`Zo=${Zo}`); 
+    //[Zo] contains all information of this devices 
     var H3 = [];
     var kK = Zo;
     var rr = kK.length;
@@ -46,6 +51,7 @@
         sJ += 1;
     }
     var mm = H3.join("");
+    //console.log(H3);
     var Tf = mm;
     function i4(n0, R7) {
         var Kn = [];
@@ -116,21 +122,26 @@
         var ph = hD;
         
         return function () {
-            var randomNumberToCheck = Math.ceil(Math.random() * 1000000000); //Use for checking all logs
+            var randomNumberToCheck = (Math.random() + 1).toString(36).substring(7);
+            
 
-            console.log(`xorShift Start ${randomNumberToCheck}, input ${aj} and ${ph}`);
+            console.log(`xorShift Start [${randomNumberToCheck}], input ${aj} and ${ph}`);
             //Log all steps 
             var Oa = ph;            
             Oa ^= Oa << 23;
+            console.log(`    ${ph} after Oa ^= Oa << 23; --> ${Oa}`);
             Oa ^= Oa >> 17;
-            var bX = aj;
+            console.log(`    ${ph} after Oa ^= Oa >> 17; --> ${Oa}`);
+            var bX = aj;            
             Oa ^= bX;
+            console.log(`    ${ph} after  Oa ^= bX ; bX=${aj}--> ${Oa}`);
             Oa ^= bX >> 26;
+            console.log(`    ${ph} after  ^= bX >> 26--> ${Oa}`);
             aj = Oa;
             ph = bX;
             var answer = (ph + aj) % 4294967296;            
 
-            console.log(`xorShift Finish ${randomNumberToCheck}`);
+            console.log(`xorShift Finish [LH(${hD}, ${mx})]--> ${answer}`);
             return answer;
         }
             ;
@@ -1519,6 +1530,7 @@
                         var cl = {};
                         var FK = [];
                         var bZ = [];
+
                         bZ[Tf.substr(771, 4)](function () {
                             var Q2 = 5;
                             var Tq = 10;
@@ -3592,8 +3604,7 @@
                             var aZ = window.btoa(zt.join(""));
                             cl.WNidm9xY = aZ;
                             u1[Tf.substr(192, 12)](Ee.substr(1497, 8));
-                        });
-                        console.log(`IMPORTANT ${Tf}`);
+                        });                       
                         bZ[Tf.substr(771, 4)](function () {
                             cl["WNidm9xYGtdYWR0bGg=="] = hK(y4, LR, function (i6) {
                                 var Ac = LH(1079950851, S7);
@@ -6297,6 +6308,10 @@
                             u1[Tf.substr(1166, 4)](Tf.substr(248, 13));
                             Dv(Yv);
                         });
+
+                        console.log(`IMPORTANT ${Tf}`);
+                        console.log(`IMPORTANT bZ length=[${bZ.length}]`);
+
                         var xt = 0;
                         var lT = function () {
                             var dz = bZ[xt];
