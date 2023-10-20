@@ -7,72 +7,37 @@
 	<h1>This tool is for testing Incapsula in Digital Credit Union</h1>
 	<h2>Workflow</h2>
 	<ul>
-		<li>Browser send login request</li>
-		<li>Server render html page with an &lt;iframe&gt; tag, which src link contains <strong>_Incapsula_Resource</strong>, look like <br/>
-			<span style="color: #2225de;">&lt;iframe id="main-iframe" src="/_Incapsula_Resource?SWUDNSAI=31&xinfo=7-1196314-0%20NNNN%20RT%281697727796589%20148%29%20q%280%200%20-1%20-1%29%20r%280%20-1%29%20B12%2814%2c0%2c0%29%20U6&incident_id=518001200004174040-6009793152425479&edet=12&cinfo=0e000000e68f&rpinfo=0&cts=qN6gkG%2b4gSHpMOJ7X%2flw5PuvVVeyYHkGkQ60jRtLChlaomij0AIlri2z4qZ%2fLaIH&mth=POST" frameborder=0 width="100%" height="100%" marginheight="0px" marginwidth="0px">Request unsuccessful. Incapsula incident ID: 518001200004174040-6009793152425479&lt;/iframe&gt;
-			</span>
-			<!--Payload
-				SWUDNSAI: 31
-				xinfo: 7-1196314-0 NNNN RT(1697727796589 148) q(0 0 -1 -1) r(0 -1) B12(14,0,0) U6
-				incident_id: 518001200004174040-6009793152425479
-				edet: 12
-				cinfo: 0e000000e68f
-				rpinfo: 0
-				cts: qN6gkG+4gSHpMOJ7X/lw5PuvVVeyYHkGkQ60jRtLChlaomij0AIlri2z4qZ/LaIH
-				mth: POST
-			-->
-			<br/>
-			and an  &lt;script&gt; tag for obfuscated JS, 
-			the current link is <strong>&lt;script&gt;https://api.prod.projectfinance.io/little-Minist-walkinderes-his-Buttrie-innies-hel&lt;/script&gt;</strong>
-			<!--
-				nlbi_2804237=ft2GRDqncD8H2Vg/huQ+kgAAAAAVJHrYeBKzzbwU4fvkBVg2; 
-				nlbi_2804237_2147483392=k39GVvG1M0koVtMGhuQ+kgAAAAB1cPEplUjMvRHsfBw5qABn; 
-				reese84=3:ORlJHBrepGqhbJ6ihzHIIg==:Fuc9t3VG9Cwq3SUQB44XjLSfBU+wVh5IQhoTab+ILrb1gz6E7yULSyVKq/f7zJjURMFVDHRbvWoL09WSZDD66ao/HebDilORuJUBUxDmSFPqwl2oOEwGtzOQgYCIK7xQiqYqtphEHyvX0AS0NCzkWXCJ+2+rA5Xz5finMSq08WW5TbOLujd7lS6u535rJI9bAtvKAvpwu/y2F9OFLhLbVBr3Xy6ByKGqgN+/XqjN9jM3EbGjwzfWxwBFQM6qjAGtUtKdQck+qce4meBLK2cS0MRjINmK6OoSZLgbwjFUmqSAqgB5JcR1ugExFc9Y6ffEvbaKr4133RRmBaBhFDPGahi+0VX/miWQuSEhmkHFK+qDFY1xx3jtBw+5FKyy2yr8gLD3A5e2o8gNzej09HYjLORH/eTRSvnUWbST8Zp/Nmt5RYs1ETG4rpiWnOiKmZlVUC6nAjsGa0XtY1zKzkz0vA==:2i5kNEs3//1AwAFDgWK/O/fWqBhNKormlN2vWWr2m4g=; 
-				incap_sh_2804237=e0QxZQAAAADVOjBnBgAI+4jFqQYnw3Oa3HpMga875o6vMMCT; 
-				incap-resubmit-token=KlDN4QGk0wo=:HBGpLdhXtNOnCAeF0N2yaHhVOUmdIsts0soT5KAAGTs=; 
-				visid_incap_2804237=LoTYa4hJSFet92Plq96QjTRFMWUAAAAAQUIPAAAAAACfkrR6lM1QOpyDTzrHpjG5; 
-				incap_ses_518_2804237=gDLfKFIIJR0WhnrPWE8wBzRFMWUAAAAAhb3ic9d0SzGVwWnzJMwV5Q==
-			-->
-		</li>
-		<li>
-			Browser sends another request which URL is get from &lt;iframe&gt; tag (above link), server response will render the Recaptcha form, looks like <br/>
-			<span>
-				&lt;script src='https://www.google.com/recaptcha/api.js'&gt;&lt;/script&gt; <br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="captcha"&gt; <br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form_container"&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="g-recaptcha" data-sitekey="6Ld38BkUAAAAAPATwit3FXvga1PI6iVTb6zgXw62" data-callback="onCaptchaFinished"&gt; 
-				
-				<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt; <br/>
-				&nbsp;&lt;/div&gt; <br/>
-			</span>
-		</li>
-
-		<li>
-			Browser sends https://api.prod.projectfinance.io/little-Minist-walkinderes-his-Buttrie-innies-hel?d=api.prod.projectfinance.io
-			<br>
-			Return: 
-			<span>
-				{
-					"token": "3:ORlJHBrepGqhbJ6ihzHIIg==:Fuc9t3VG9Cwq3SUQB44XjLSfBU+wVh5IQhoTab+ILrb1gz6E7yULSyVKq/f7zJjURMFVDHRbvWoL09WSZDD66ao/HebDilORuJUBUxDmSFPqwl2oOEwGtzOQgYCIK7xQiqYqtphEHyvX0AS0NCzkWXCJ+2+rA5Xz5finMSq08WW5TbOLujd7lS6u535rJI9bAtvKAvpwu/y2F9OFLhLbVBr3Xy6ByKGqgN+/XqjN9jM3EbGjwzfWxwBFQM6qjAGtUtKdQck+qce4meBLK2cS0MRjINmK6OoSZLgbwjFUmqSAqgB5JcR1ugExFc9Y6ffEvbaKr4133RRmBaBhFDPGahi+0VX/miWQuSEhmkHFK+qDFY1xx3jtBw+5FKyy2yr8gLD3A5e2o8gNzej09HYjLORH/eTRSvnUWbST8Zp/Nmt5RYs1ETG4rpiWnOiKmZlVUC6nAjsGa0XtY1zKzkz0vA==:2i5kNEs3//1AwAFDgWK/O/fWqBhNKormlN2vWWr2m4g=",
-					"renewInSec": 320,
-					"cookieDomain": "api.prod.projectfinance.io"
-				}
-			</span>
-			<span>
-				Cookie: 
-				nlbi_2804237=ft2GRDqncD8H2Vg/huQ+kgAAAAAVJHrYeBKzzbwU4fvkBVg2; 
-				reese84=3:ORlJHBrepGqhbJ6ihzHIIg==:Fuc9t3VG9Cwq3SUQB44XjLSfBU+wVh5IQhoTab+ILrb1gz6E7yULSyVKq/f7zJjURMFVDHRbvWoL09WSZDD66ao/HebDilORuJUBUxDmSFPqwl2oOEwGtzOQgYCIK7xQiqYqtphEHyvX0AS0NCzkWXCJ+2+rA5Xz5finMSq08WW5TbOLujd7lS6u535rJI9bAtvKAvpwu/y2F9OFLhLbVBr3Xy6ByKGqgN+/XqjN9jM3EbGjwzfWxwBFQM6qjAGtUtKdQck+qce4meBLK2cS0MRjINmK6OoSZLgbwjFUmqSAqgB5JcR1ugExFc9Y6ffEvbaKr4133RRmBaBhFDPGahi+0VX/miWQuSEhmkHFK+qDFY1xx3jtBw+5FKyy2yr8gLD3A5e2o8gNzej09HYjLORH/eTRSvnUWbST8Zp/Nmt5RYs1ETG4rpiWnOiKmZlVUC6nAjsGa0XtY1zKzkz0vA==:2i5kNEs3//1AwAFDgWK/O/fWqBhNKormlN2vWWr2m4g=; 
-				incap_sh_2804237=e0QxZQAAAADVOjBnBgAI+4jFqQYnw3Oa3HpMga875o6vMMCT; incap-resubmit-token=KlDN4QGk0wo=:HBGpLdhXtNOnCAeF0N2yaHhVOUmdIsts0soT5KAAGTs=; visid_incap_2804237=LoTYa4hJSFet92Plq96QjTRFMWUAAAAAQUIPAAAAAACfkrR6lM1QOpyDTzrHpjG5; incap_ses_518_2804237=gDLfKFIIJR0WhnrPWE8wBzRFMWUAAAAAhb3ic9d0SzGVwWnzJMwV5Q==; nlbi_2804237_2147483392=dPdhF/s4+xrgUi6shuQ+kgAAAAB1cmhd6NUoggDAtDdAnHeY
-			</span>
-			
-		</li>
-
+		<li>Browser send login request: ://api.prod.projectfinance.io/api/v2/user/siteLogin/DCU </li>
+		<li></li>
+		
 	</ul>
 	
 	<!--<script src="/jsfile.js"></script>-->
-	<script src="/anotherJSfile.js"></script>
+	<!--<script src="/anotherJSfile.js"></script>-->
+	<script src="/anotherJS2.js"></script>
+
+	<script> 
+		//_Incapsula_Resource?SWUDNSAI=31&xinfo=5-14431031-0%20NNNN%20RT%281697821768621%2093%29%20q%280%200%20-1%201%29%20r%280%20-1%29%20B12%2814%2c0%2c0%29%20U6&incident_id=518001200027574467-73347785067732485&edet=12&cinfo=0e000000e68c&rpinfo=0&cts=nbV09M8kb3O4Xpke5haO5J1VL8jbhIrZKYMR50Lc6vqadiPzVxrWvGqUdIDR%2bNB6&mth=POST
+		var xhr;
+        if ( window.XMLHttpRequest ) {
+            xhr = new XMLHttpRequest;
+        } else {
+            xhr = new ActiveXObject( "Microsoft.XMLHTTP" );
+        }
+        var msg = "g-recaptcha-response=" + response;
+        xhr.open( "GET", "_Incapsula_Resource?SWUDNSAI=31&xinfo=2-10228059-0%20SNNN%20RT%281697827876115%207882%29%20q%280%201%20-1%20-1%29%20r%281%20-1%29%20B12%2814%2c0%2c0%29%20U6&incident_id=515001190030004357-53145220979826114&edet=12&cinfo=0e000000ce27&rpinfo=0&cts=o52xxnVtFgU%2bHcqomJhEaJAGKF3vnUgbIUFqcls8dr%2f6Yq74ZfJC7rHdmmq1nZLi&mth=POST", true );
+        xhr.setRequestHeader( "Content-Type", "application/x-www-form-urlencoded" );
+        xhr.onreadystatechange = function () {
+            if ( xhr.readyState == 4 ) {
+                if (xhr.status == 200) {
+                    document.getElementById("reese84-resubmit-form").submit();
+                } else {
+window.parent.location.reload(true);
+                }
+            }
+        }
+        xhr.send( msg );
+	</script>
 
 	
 

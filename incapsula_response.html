@@ -1,0 +1,114 @@
+to;
+      border-radius: 5px;
+      max-width: 500px;
+    }
+
+    .container--terms {
+      padding: 30px;
+    }
+
+    .header {
+      display: block;
+      margin: 0px auto;
+      text-align: center;
+    }
+
+    .image__logo {
+      margin: auto;
+      margin-bottom: 16px;
+      height: 32px;
+    }
+
+    .title {
+      padding: 0 0 10px 0;
+      margin: 0px;
+      text-align: center;
+      font-size: 24px;
+      color: rgb(97, 97, 97);
+      font-weight: 400;
+    }
+
+    .header__separator {
+      border-style: 'solid';
+      border-width: '1px';
+      width: '100%';
+      border: 1px solid #01675a;
+      margin: 0px 12px 24px 12px;
+    }
+
+    .content {
+      margin: 0px auto;
+      text-align: center;
+    }
+
+    .text__medium {
+      margin: 0px;
+    }
+
+    @media all and (min-width: 33.75rem) {
+      .header,
+      .content {
+        width: 90%;
+      }
+      
+      .content > p {
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" :style="containerStyle">
+    <div class="container__content" :style="uiContainerStyle">
+      <div class="container--terms">
+        <div class="header">
+          <img class="image__logo"
+            src="https://s3.amazonaws.com/assets.projectfinance.io/siteAssets/DCU/dcuLogoDark.png" alt="Logo">
+          <h1 class="title">We need to perform additional security to protect access to your account</h1>
+          <hr class="header__separator">
+        </div>
+        <div class="content">
+          <p>Please click the CAPTCHA below and follow its instructions:</p>
+          <div>
+               <script>document.write("<form id=\"reese84-resubmit-form\" target=\"_parent\" action=\"" + window.parent.location + "\" method=\"post\">")</script>
+   <input type="hidden" name="reese84-resubmit-data" value="kXecszcuKyZulPXG+hzgNO6A1VAliLk2OtonvYNMXF8jIBrpPiHACShEAvzOGMYyBkn+zOzbSCmwDM6B4QT1mh4PsrHo7lZAFnLxP6VVo24wcsl7n0HXNvWmZaO7G04GUqwfCa34WH3JkofXv5mAog==">
+</form>
+<script>
+    var RecaptchaOptions  = { theme: 'custom', custom_theme_widget: 'recaptcha_widget' };
+    var onCaptchaFinished = function ( response ) {
+        var xhr;
+        if ( window.XMLHttpRequest ) {
+            xhr = new XMLHttpRequest;
+        } else {
+            xhr = new ActiveXObject( "Microsoft.XMLHTTP" );
+        }
+        var msg = "g-recaptcha-response=" + response;
+        xhr.open( "POST", "/_Incapsula_Resource?SWCGHOEL=v2&dai=73347785067732485&cts=nbV09M8kb3O4Xpke5haO5J1VL8jbhIrZKYMR50Lc6vqadiPzVxrWvGqUdIDR%2bNB6", true );
+        xhr.setRequestHeader( "Content-Type", "application/x-www-form-urlencoded" );
+        xhr.onreadystatechange = function () {
+            if ( xhr.readyState == 4 ) {
+                if (xhr.status == 200) {
+                    document.getElementById("reese84-resubmit-form").submit();
+                } else {
+window.parent.location.reload(true);
+                }
+            }
+        }
+        xhr.send( msg );
+    };
+</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="captcha">
+    <div class="form_container">
+        <div class="g-recaptcha" data-sitekey="6Ld38BkUAAAAAPATwit3FXvga1PI6iVTb6zgXw62" data-callback="onCaptchaFinished" ></div>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
